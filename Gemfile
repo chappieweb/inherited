@@ -4,7 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'thin'
+
 gem 'mysql2'
+
+gem "twitter-bootstrap-rails"
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
