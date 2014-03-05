@@ -1,28 +1,27 @@
-== README
+== Inherit  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Have you ever created a user authentication system that started out very simple but then grew and grew in usage and complexity.
 
-Things you may want to cover:
+This is a solution to that problem.
 
-* Ruby version
+Say there are three tiers (never any more)
 
-* System dependencies
+Root
 
-* Configuration
+Org1             
+Org2 
+Org3
 
-* Database creation
+Org 1 Child 1
+Org 1 Child 2
 
-* Database initialization
+Org 2 Child 1
 
-* How to run the test suite
+Org 4  Child 1
 
-* Services (job queues, cache servers, search engines, etc.)
+And several permissions such as
+Admin
+User
+Denied (required)
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Now I can give User permission to a user to Org 1 and they will be also granted user access to Org1 Child1 & Org1 Child2, unless there is a specific Denied assignment for that user to a specific Child or Org.
